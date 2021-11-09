@@ -12,5 +12,4 @@ resource "google_container_cluster" "kcl" {
   # node pool and immediately delete it.
   remove_default_node_pool = true
   initial_node_count       = 1
-  labels                   = var.labels
 }
