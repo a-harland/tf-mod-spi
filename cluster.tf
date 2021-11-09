@@ -1,5 +1,5 @@
 locals {
-  kubernetes_version = "1.19.12-gke.2100"
+  kubernetes_version = "1.20.10-gke.1600"
 }
 
 resource "google_container_cluster" "kcl" {
