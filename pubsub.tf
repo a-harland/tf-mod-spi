@@ -7,6 +7,7 @@ resource "google_pubsub_topic" "gcr_topic" {
       "europe-west2",
     ]
   }
+  labels = var.labels
 }
 
 resource "google_pubsub_topic" "gcb_topic" {
@@ -18,6 +19,7 @@ resource "google_pubsub_topic" "gcb_topic" {
       "europe-west2",
     ]
   }
+  labels = var.labels
 }
 
 resource "google_pubsub_topic" "notifications" {
