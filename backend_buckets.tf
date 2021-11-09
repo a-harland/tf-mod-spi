@@ -5,6 +5,7 @@ resource "google_storage_bucket" "spiartifacts" {
   force_destroy = true
 
   uniform_bucket_level_access = true
+  labels                      = var.labels
 }
 
 resource "google_storage_bucket" "config" {
@@ -14,6 +15,7 @@ resource "google_storage_bucket" "config" {
   force_destroy = true
 
   uniform_bucket_level_access = true
+  labels                      = var.labels
 }
 
 resource "google_storage_bucket" "hal_config" {
@@ -23,4 +25,5 @@ resource "google_storage_bucket" "hal_config" {
   force_destroy = true
 
   uniform_bucket_level_access = true
+  labels                      = var.labels
 }
